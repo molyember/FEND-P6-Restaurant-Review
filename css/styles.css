@@ -73,7 +73,7 @@ nav h1 a {
   text-transform: uppercase;
 }
 #breadcrumb {
-    padding: 10px 0px 16px;
+    padding: 10px 0px 16px 20px;
     list-style: none;
     background-color: #eee;
     font-size: 17px;
@@ -341,10 +341,16 @@ nav h1 a {
 }
 
 @media screen and (min-width: 1000px) {
-	#maincontent {
+
+	.inside #maincontent {
 		width: 980px;
 		margin: 0 auto 0 auto;
 		flex-direction: row;
+	}
+
+	#breadcrumb {
+	  width: 980px;
+		margin: auto;
 	}
 
 	.inside #map-container {
@@ -352,6 +358,12 @@ nav h1 a {
 		order: 3;
 		flex: 1;
 	}
+
+	#map-container {
+		order: -1;
+		flex: 1;
+	}
+
 	#reviews-container {
 		order: 1;
 		flex: 2;
